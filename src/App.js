@@ -1,4 +1,5 @@
 import React from "react"
+import ReactDOM from 'react-dom/client';
 import { useState } from "react"
 
 export default function App(){
@@ -14,10 +15,15 @@ export default function App(){
         setNumero(numero - 1)
     }
 
-    return <div>
+    function reset() {
+        setNumero(0)
+    }
+
+    return <section>
         <h1>Contador</h1>
         <p>{numero}</p>
-        <button onClick={aumentar}>mais</button>
-        <button onClick={diminuir}>menos</button>
-    </div>
+        <button className='btn'onClick={aumentar}>+</button>
+        <button className='btn'onClick={diminuir}>-</button>
+        <button className='btn'onClick={reset}>reset</button>
+    </section>
 }
