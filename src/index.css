@@ -1,6 +1,13 @@
 body {
     margin: 0%;
+    box-sizing: border-box;
+    min-height: 100vh; align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat; background-position-y: 45%;
+    background-size: cover;
     background-color: rgb(255, 153, 0);
 }
 .btn {
